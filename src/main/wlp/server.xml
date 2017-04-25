@@ -11,5 +11,6 @@
     </httpEndpoint>
 
     <application name="JavaHelloWorldApp" context-root="/JavaHelloWorldApp" location="${appLocation}" type="war"/>
-
+    <ssl id="defaultSSLConfig" trustStoreRef="defaultTrustStore"/>
+    <keyStore id="defaultTrustStoretore" location="${java.home}/lib/security/cacerts"/>
 </server>
