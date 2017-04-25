@@ -19,7 +19,7 @@ import com.mongodb.DBApiLayer;
 public class SimpleServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
     @Resource(name = "mongo/Compose for MongoDB-3r")
-    private DB mydb;
+    private DBApiLayer mydb;
 
     /**
      * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
