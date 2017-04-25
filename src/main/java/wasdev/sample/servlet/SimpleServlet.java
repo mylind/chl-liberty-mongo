@@ -11,6 +11,7 @@ import javax.annotation.Resource;
 import com.mongodb.DB;
 import com.mongodb.DBApiLayer;
 
+
 /**
  * Servlet implementation class SimpleServlet
  */
@@ -18,7 +19,7 @@ import com.mongodb.DBApiLayer;
 public class SimpleServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
     @Resource(name = "mongo/Compose for MongoDB-3r")
-    private DBApiLayer mydb;
+    private DB mydb;
 
     /**
      * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
