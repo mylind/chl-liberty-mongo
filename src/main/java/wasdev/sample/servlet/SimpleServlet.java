@@ -24,7 +24,6 @@ import com.mongodb.MongoException;
 @WebServlet("/SimpleServlet")
 public class SimpleServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
-    private static final long serialVersionUID = 1L;
     @Resource(name = "mongo/Compose for MongoDB-3r")
 	protected DB db;
 
@@ -33,7 +32,7 @@ public class SimpleServlet extends HttpServlet {
      */
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        PrintWriter pw = resp.getWriter();
+        PrintWriter pw = response.getWriter();
 		if (db == null) {
 			pw.println("Uh oh! Something went wrong. DB is null, please check the server logs.");
 		} else {
