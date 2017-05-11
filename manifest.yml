@@ -6,5 +6,6 @@ applications:
   name: chl-liberty-mongo
   host: chl-liberty-mongo
   disk_quota: 1024M
+  buildpack: liberty-for-java
   services:
   - Compose for MongoDB-3r
